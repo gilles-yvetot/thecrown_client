@@ -1,0 +1,13 @@
+{
+  "name": "theCrown_website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gilles Yvetot <g.yvetot@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "slate": "rm -rf node_modules && yarn"
+  }
+}
