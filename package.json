@@ -8,7 +8,7 @@
     "dev": "next",
     "build": "next build",
     "postinstall": "yarn build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "slate": "rm -rf node_modules && yarn"
   },
   "dependencies": {
