@@ -18,9 +18,9 @@ class Dapp extends React.Component {
   }
 
   buyTokens = async () => {
-    const { tokenInpt, } = this.state
+    const { tokenInpt, accounts } = this.state
     if (tokenInpt) {
-      const { saleContract, accounts } = this.props
+      const { saleContract } = this.props
       if (accounts.length) {
         saleContract.buyTokens(
           accounts[0],
@@ -74,7 +74,7 @@ class Dapp extends React.Component {
                 min="0"
                 onChange={({ target: { value } }) => this.setState({ tokenInpt: value })}
               />
-              <span>{(tokenInpt || 0) * 1000}</span>
+              <span>{(tokenInpt || 0) * 1000} crown tokens</span>
             </div>
 
             <div>
