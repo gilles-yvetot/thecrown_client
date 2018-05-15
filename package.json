@@ -9,7 +9,8 @@
     "build": "next build",
     "postinstall": "yarn build",
     "start": "next start -p $PORT",
-    "slate": "rm -rf node_modules && yarn"
+    "slate": "rm -rf node_modules && yarn",
+    "deploy": "git push heroku master"
   },
   "dependencies": {
     "isomorphic-unfetch": "^2.0.0",
