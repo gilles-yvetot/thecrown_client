@@ -1,6 +1,12 @@
-# Next.js client
+# The Crown - Client
 
 This is the frontend client for our dapp. It is built with Next.js and uses a render-prop pattern (via `lib/Web3Container.js`) so we can easily inject blockchain functionality (i.e. web3, accounts, and the contract instance) into each page.
+
+## Getting Started
+
+This a classic Next.js project, if you are not familiar with Next.js, I pasted their Readme file `NEXTJS.md` next to this file. To sum-up it is a React project with SSR and great dev tools out of the box. Just write pages and you are good. So far I just added a blockchain layer on top of it.
+
+You will need to generate the smart contracts from the other project `thecrown_blockchain` (see instructions there) and copy-paste them into `lib/contracts`. I wanted to work with a single repo for both projects but git does not support symlinks so I splitted them in two.
 
 ## Pages
 
